@@ -1,4 +1,4 @@
-//Assigments
+// Assigments
 // #1
 // Write a function called isEven which checks if a number is even or odd.
 // Hints: 0 if even and 1 is odd, for any number N, its evennes is the same as N-2
@@ -6,7 +6,7 @@
 
 const n = prompt('Enter any number')
 function isEven () {
-  if (n % 2) {
+  if (n % 2 === 0) {
     return 'Odd'
   } else {
     return 'Even'
@@ -19,14 +19,14 @@ function isEven () {
 // countBs("Bombastic") => 1
 // countBs("bbbbBBBBonB") => 5
 
-const str = prompt('Write => Haaland is wHell')
-let count = 0
-let position = str.indexOf('H')
-while (position !== -1) {
-  count++
-  position = str.indexOf('H', position + 1)
-}
-console.log(count)
+// const str = prompt('Write => Haaland is wHell')
+// let count = 0
+// let position = str.indexOf('H')
+// while (position !== -1) {
+//   count ++
+//   position = str.indexOf('H', position + 1)
+// }
+// console.log(count)
 
 // #3
 // Write a function called CountChar that behaves like CountBs expect it takes a second
@@ -43,20 +43,20 @@ console.log(count)
 // ex 1 1 2 3 5
 // let n = 5;
 
-const fib = (n) => {
-  if (n <= 1) {
-    return n
-  }
-  const prev = 0
-  const cur = 1
-  for (let i = 2; i <= n; i++) {
-    const nex = prev + cur
-    const previous = cur
-    const current = nex
-  }
-  return current
-}
-console.log(fib(10))
+// const fib = (n) => {
+//   if (n <= 1) {
+//     return n
+//   }
+//   const prev = 0
+//   const cur = 1
+//   for (let i = 2; i <= n; i++) {
+//     const nex = prev + cur
+//     const previous = cur
+//     const current = nex
+//   }
+//   return current
+// }
+// console.log(fib(10))
 
 // #5
 // Write a function range that takes 2 arguments
@@ -115,9 +115,9 @@ console.log(arrAverage)
 function deepEqual (a, b) {
   if (a === b || a === b) {
     return true
-  } 
+  }
   else {
     return false
-  }
+    }
 }
 console.log(deepEqual(6, 3))
