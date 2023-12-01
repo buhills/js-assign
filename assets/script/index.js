@@ -113,11 +113,10 @@ console.log(arrAverage)
 // they are of the same value or are objects with the same property
 
 function deepEqual (a, b) {
-  if (a === b || a === b) {
-    return true
+    if (a === b || a === b) {
+      return true
+    } else {
+      return false
+      }
   }
-  else {
-    return false
-    }
-}
 console.log(deepEqual(6, 3))
