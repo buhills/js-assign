@@ -4,12 +4,12 @@
 // Hints: 0 if even and 1 is odd, for any number N, its evennes is the same as N-2
 // Notice how this works when N is negative, try to fix it
 
-const n = prompt("Enter any number")
-function isEven() {
-  if(n % 2) {
-    return "Odd"
+const n = prompt('Enter any number')
+function isEven () {
+  if (n % 2) {
+    return Odd
   } else {
-    return "Even"
+    return Even
   }
 } console.log(isEven())
 
@@ -21,10 +21,10 @@ function isEven() {
 
 const str = prompt('Write => Haaland is wHell')
 let count = 0
-let position = str.indexOf("H")
+let position = str.indexOf('H')
 while (position !== -1) {
   count++;
-  position = str.indexOf("H", position +1)
+  position = str.indexOf('H', position + 1)
 }
 console.log(count)
 
@@ -44,12 +44,12 @@ console.log(count)
 // let n = 5;
 
 const fib = (n) => {
-  if(n <= 1) {
+  if (n <= 1) {
     return n;
   }
   const prev = 0
   const cur = 1
-  for(let i = 2; i <= n; i++) {
+  for (let i = 2; i <= n; i++) {
     let nex = prev + cur
     let previous = cur
     let current = nex
@@ -66,23 +66,20 @@ console.log(fib(10))
 
 const strin = []
 function range (a, b) {
-  for(let i = a;  i <= b; i++) {
+  for (let i = a; i <= b; i++) {
     strin.push(i)
   }
-return strin
+  return strin
 }
 console.log(range(1, 9))
-
 
 // #6
 // Write a stepRange that acts like ranges but takes an extra increment or decrement parameter
 // stepRange (1, 10, 2) =>[1,3,5,7,9]
 // stepRange (5, 1, -1) =>[5,4,3,2,1]
 
-
-
 // #7
-// combine both function into trueRange 
+// combine both function into trueRange
 // trueRange(1, 5) =>[1,2,3,4,5]
 // turRange(1, 10, 2) =>[1,3,5,7,9]
 // trueRange(5, 2, -1) =>[5,4,3,2]
@@ -90,29 +87,29 @@ console.log(range(1, 9))
 const trueRange = [1, 2, 3, 4, 5]
 const truRange = [5, 4, 3]
 
-trueRange.push(...truRange);
+trueRange.push(...truRange)
 console.log(trueRange)
 
 // #8
-// Write a sum fuuction that take an array and returns the sum of its elements 
+// Write a sum fuuction that take an array and returns the sum of its elements
 // sum([1,2,3,4,5]) => 15
 
-let arr = [1, 2, 3, 4, 5]
-let arrSum = arr.reduce((acc, curr) => acc + curr, 0)
+const arr = [1, 2, 3, 4, 5]
+const arrSum = arr.reduce((acc, curr) => acc + curr, 0)
 console.log(arrSum)
 
 // #9
 // Write a function to return the average of an array
 // average{[1,2,3,4,5,]} =>3
 
-let array = [1, 2, 3, 4]
-let arrAverage = array.reduce((acc, curr) => acc + curr, 0) / array.length
+const array = [1, 2, 3, 4]
+const arrAverage = array.reduce((acc, curr) => acc + curr, 0) / array.length
 console.log(arrAverage)
 
 // #10
-// The == operator compares objects by identity. But sometimes you would 
+// The == operator compares objects by identity. But sometimes you would
 // prefers to compare the values of their actual properties
-// Write a function deepEqual that take 2 values and returns true if only 
+// Write a function deepEqual that take 2 values and returns true if only
 // they are of the same value or are objects with the same property
 
 function deepEqual (a, b) {
