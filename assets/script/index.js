@@ -7,9 +7,9 @@
 const n = prompt('Enter any number')
 function isEven () {
   if (n % 2) {
-    return Odd
+    return 'Odd'
   } else {
-    return Even
+    return 'Even'
   }
 } console.log(isEven())
 
@@ -23,7 +23,7 @@ const str = prompt('Write => Haaland is wHell')
 let count = 0
 let position = str.indexOf('H')
 while (position !== -1) {
-  count++;
+  count++
   position = str.indexOf('H', position + 1)
 }
 console.log(count)
@@ -45,14 +45,14 @@ console.log(count)
 
 const fib = (n) => {
   if (n <= 1) {
-    return n;
+    return n
   }
   const prev = 0
   const cur = 1
   for (let i = 2; i <= n; i++) {
-    let nex = prev + cur
-    let previous = cur
-    let current = nex
+    const nex = prev + cur
+    const previous = cur
+    const current = nex
   }
   return current
 }
@@ -115,7 +115,8 @@ console.log(arrAverage)
 function deepEqual (a, b) {
   if (a === b || a === b) {
     return true
-  } else {
+  } 
+  else {
     return false
   }
 }
